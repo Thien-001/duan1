@@ -1,0 +1,128 @@
+/* Breadcrumb */
+.breadcrumb {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+  font-size: 16px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb .current-product {
+  color: #333;
+  text-decoration: none; /* Loại bỏ gạch chân */
+
+}
+
+/* Product Layout */
+.product-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 500px;
+  background-color: #f9f9f9; /* Màu nền nhạt */
+  border: 0.5px ;
+  border-radius: 10px; /* Bo góc viền */
+  padding: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto; /* Căn giữa */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+}
+
+
+.product-container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  justify-content: space-between; /* Tạo khoảng cách giữa 2 phần */
+  gap: 70px; /* Tạo khoảng cách giữa hình ảnh và thông tin */
+}
+
+/* Hình ảnh sản phẩm */
+.product-image {
+  width: 50%;
+  display: flex;
+  justify-content: center; /* Căn giữa ảnh */
+}
+
+/* Ảnh sản phẩm */
+.product-image img {
+  width: 100%;
+  max-width: 600px; /* Giới hạn kích thước ảnh */
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Thông tin sản phẩm */
+.product-info {
+  width: 50%;
+  padding-left: 20px; /* Thêm khoảng cách bên trái */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/* Tên sản phẩm */
+.product-info h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.product-info p {
+  font-size: 18px;
+}
+
+.price{
+  font-size: 18px;
+  font-weight: bold;
+  color: #f00;
+}
+
+/* Định dạng hàng chứa Giá & Số lượng */
+.price-quantity {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Căn trái để dễ đọc */
+  gap: 30px; /* Tạo khoảng cách giữa Giá và Số lượng */
+  margin-bottom: 15px;
+}
+
+/* Giá sản phẩm */
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e60000; /* Màu đỏ nổi bật */
+  margin: 0;
+  min-width: 120px; /* Đảm bảo giá không quá sát số lượng */
+}
+
+/* Ô chọn số lượng */
+.quantity-selector {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-selector label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.quantity-selector input {
+  width: 60px;
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
